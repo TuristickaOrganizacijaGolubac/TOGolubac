@@ -25,3 +25,8 @@ body {
 #flipbook .page:nth-child(even) {
     background-color: #fff;
 }
+
+#flipbook .page {
+    box-shadow: none !important; /* Važno za curl efekat */
+    border-radius: 0 !important; /* Važno za curl efekat */
+}
