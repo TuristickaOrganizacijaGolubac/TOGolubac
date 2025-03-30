@@ -7,11 +7,12 @@ $(document).ready(function() {
         width: width,
         height: height,
         autoCenter: true,
-        elevation: 0,
+        elevation: 50,
         gradients: true,
         gradientColors: ['#fff', '#fff'],
         pages: 19,
         display: 'single',
+        turnCorners: 'bl,br',
         when: {
             turned: function(e, page) {
                 console.log('Trenutna stranica: ' + page);
