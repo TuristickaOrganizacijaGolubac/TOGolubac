@@ -3,6 +3,17 @@ $(document).ready(function() {
     var width = Math.min(1000, $(window).width() * 0.9);
     var height = width;
 
+     $('#flipbook').on('click', '.page', function(e) {
+        var x = e.pageX - $(this).offset().left;
+        var pageWidth = $(this).width();
+
+        if (x < pageWidth * 0.2) { // Klik na levi ćošak
+            $('#flipbook').turn('previous');
+        } else if (x > pageWidth * 0.8) { // Klik na desni ćošak
+            $('#flipbook').turn('next');
+        }
+    });
+
     flipbook.turn({
         width: width,
         height: height,
