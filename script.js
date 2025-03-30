@@ -7,12 +7,10 @@ $(document).ready(function() {
         width: width,
         height: height,
         autoCenter: true,
-        elevation: 50,
-        gradients: true,
-        gradientColors: ['#fff', '#fff'],
+        gradients: true, // Omogućava gradijente (curl efekat)
+        elevation: 50, // Podešava dubinu curl efekta
         pages: 19,
         display: 'single',
-        turnCorners: 'bl,br',
         when: {
             turned: function(e, page) {
                 console.log('Trenutna stranica: ' + page);
