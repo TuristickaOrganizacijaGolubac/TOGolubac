@@ -19,7 +19,7 @@ $(document).ready(function() {
         height: height,
         autoCenter: true,
         gradients: true, // Omogućava gradijente (curl efekat)
-        elevation: 50, // Podešava dubinu curl efekta
+        elevation: 0, // Podešava dubinu curl efekta
         pages: 19,
         display: 'single',
         when: {
